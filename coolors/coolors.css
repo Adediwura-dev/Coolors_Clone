@@ -114,7 +114,7 @@ header {
   color: black;
 }
 
-.creative-text{
+.creative-text {
   font-family: Inter, sans-serif;
   font-weight: 400;
   color: rgb(115, 115, 115);
@@ -141,7 +141,7 @@ header {
 }
 
 /* my work goes here */
-.brand-logos{
+.brand-logos {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -150,7 +150,7 @@ header {
   padding: 0;
   flex-wrap: nowrap;
 
-  img{
+  img {
     height: 28px;
   }
 }
@@ -163,17 +163,17 @@ header {
   }
 }
 
-.hero2{
+.hero2 {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 30px 150px 30px 10px;
+  padding: 30px 100px 30px 50px;
   gap: 120px;
   flex-wrap: wrap;
 }
 
 .hero2Box {
-  padding-top: 35px;
+  padding: 40px;
   width: 500px;
 }
 
@@ -225,6 +225,18 @@ header {
   font-size: 15px;
   line-height: 1.1;
   color: #444;
+}
+
+.tools-text {
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  color: rgb(115, 115, 115);
+  line-height: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  /* margin-top: 10px; */
+  margin-bottom: 10px;
+  /* align-items: center; */
 }
 
 /* .testbox {
