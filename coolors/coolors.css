@@ -121,6 +121,8 @@ header {
   line-height: 20px;
   text-transform: uppercase;
   letter-spacing: 2px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 1000px) {
@@ -155,14 +157,74 @@ header {
 
 .hero2Text {
   p {
-    background-color: red;
     font-size: 24px;
-    max-width: 850px;
+    max-width: 750px;
+    line-height: 35px;
   }
 }
 
 .hero2{
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 150px 30px 10px;
+  gap: 120px;
+  flex-wrap: wrap;
+}
+
+.hero2Box {
+  padding-top: 35px;
+  width: 500px;
+}
+
+.color-day-title {
+  width: 200px;
+  margin-left: 40px;
+  margin-bottom: -18px;
+}
+
+.color-card {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  background: rgb(245, 245, 245);
+  border-radius: 20px;
+  padding: 40px;
+}
+
+.homepage-color-of-the-day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.color-box {
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  margin-bottom: 2px;
+}
+
+.hex-code {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.color-info {
+  flex: 1;
+}
+
+.color-info h2 {
+  margin: 0 0 10px;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.color-info p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.1;
+  color: #444;
 }
 
 /* .testbox {
