@@ -141,18 +141,37 @@ header {
 }
 
 /* my work goes here */
+.logo-container {
+  overflow: hidden;
+  width: 100%;
+}
+
 .brand-logos {
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 3rem;
   list-style: none;
   padding: 0;
-  flex-wrap: nowrap;
+  width: max-content;
+  animation: scroll 40s linear infinite;
 
   img {
     height: 28px;
   }
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.brand-logos:hover {
+  animation-play-state: paused;
 }
 
 .hero2Text {
@@ -169,7 +188,7 @@ header {
   align-items: center;
   padding: 30px 100px 30px 50px;
   gap: 120px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .hero2Box {
@@ -239,222 +258,114 @@ header {
   /* align-items: center; */
 }
 
-.generator1 {
-  border-radius: 20px;
-  justify-content: space-evenly;
-  background-color: rgb(207, 250, 254);
-  padding: 15px 15px;
+.card {
   width: 400px;
-
-  h3 {
-    font-size: 50px;
-    color: #257988;
-  }
+  padding: 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.schemes-text {
+.card h3 {
+  font-size: 50px;
+  color: inherit;
+}
+
+.card-description {
   font-size: 22px;
-  color: #257988;
+  color: inherit;
 }
 
-.start-the-generator {
+.card-link {
   font-size: 15px;
   letter-spacing: 1px;
+  color: inherit;
+}
+
+.card,
+.card * {
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.card:hover * {
+  color: white;
+}
+
+.generator1 {
+  background: rgb(207, 250, 254);
   color: #257988;
+}
+
+.generator1:hover {
+  background: #257988;
 }
 
 .generator2 {
-  border-radius: 20px;
-  justify-content: space-evenly;
-  background-color: #dbeafe;
-  padding: 15px 15px;
-  width: 400px;
-
-  h3 {
-    font-size: 50px;
-    color: rgb(59, 30, 246);
-  }
-}
-
-.inspired-text {
-  font-size: 22px;
+  background: #dbeafe;
   color: rgb(59, 30, 246);
 }
 
-.explore-palettes {
-  font-size: 15px;
-  letter-spacing: 1px;
-  color: rgb(59, 30, 246);
+.generator2:hover {
+  background: rgb(59, 30, 246);
 }
 
 .generator3 {
-  border-radius: 20px;
-  justify-content: space-evenly;
-  background-color: #f3e8ff;
-  padding: 15px 15px;
-  width: 400px;
-
-  h3 {
-    font-size: 50px;
-    color: #a855f7;
-  }
-}
-
-.extract-text {
-  font-size: 22px;
+  background: #f3e8ff;
   color: #a855f7;
 }
 
-.launch-image-picker {
-  font-size: 15px;
-  letter-spacing: 1px;
-  color: #a855f7;
+.generator3:hover {
+  background: #a855f7;
 }
 
 .generator4 {
-  border-radius: 20px;
-  justify-content: space-evenly;
-  background-color: #fce7f3;
-  padding: 15px 15px;
-  width: 400px;
-
-  h3 {
-    font-size: 50px;
-    color: #ec4899;
-  }
-}
-
-.calculate-text {
-  font-size: 22px;
+  background: #fce7f3;
   color: #ec4899;
 }
 
-.try-contrast-checker {
-  font-size: 15px;
-  letter-spacing: 1px;
-  color: #ec4899;
+.generator4:hover {
+  background: #ec4899;
 }
 
 .generator5 {
-  border-radius: 20px;
-  justify-content: space-evenly;
-  background-color: #fee2e2;
-  padding: 15px 15px;
-  width: 400px;
-
-  h3 {
-    font-size: 50px;
-    color: #ef4444;
-  }
-}
-
-.preview-text {
-  font-size: 22px;
+  background: #fee2e2;
   color: #ef4444;
 }
 
-.open-visualizer {
-  font-size: 15px;
-  letter-spacing: 1px;
-  color: #ef4444;
+.generator5:hover {
+  background: #ef4444;
 }
 
 .generator6 {
-  border-radius: 20px;
-  justify-content: space-evenly;
-  background-color: #ffedd5;
-  padding: 15px 15px;
-  width: 400px;
-
-  h3 {
-    font-size: 50px;
-    color: #f97316;
-  }
-}
-
-.information-text {
-  font-size: 22px;
+  background: #ffedd5;
   color: #f97316;
 }
 
-.launch-picker {
-  font-size: 15px;
-  letter-spacing: 1px;
-  color: #ef4444;
+.generator6:hover {
+  background: #f97316;
 }
 
 .generator7 {
-  border-radius: 20px;
-  justify-content: space-evenly;
-  background-color: #fef9c3;
-  padding: 15px 15px;
-  width: 400px;
-
-  h3 {
-    font-size: 50px;
-    color: #eab308;
-  }
-}
-
-.tailwind-text {
-  font-size: 22px;
+  background: #fef9c3;
   color: #eab308;
 }
 
-.get-your-tailwind {
-  font-size: 15px;
-  letter-spacing: 1px;
-  color: #eab308;
+.generator7:hover {
+  background: #eab308;
 }
 
 .generator8 {
-  border-radius: 20px;
-  justify-content: space-evenly;
-  background-color: #dcfce7;
-  padding: 15px 15px;
-  width: 400px;
-
-  h3 {
-    font-size: 50px;
-    color: #22c55e;
-  }
-}
-
-.chat-text {
-  font-size: 22px;
+  background: #dcfce7;
   color: #22c55e;
 }
 
-.chat-with-bot {
-  font-size: 15px;
-  letter-spacing: 1px;
-  color: #22c55e;
+.generator8:hover {
+  background: #22c55e;
 }
 
-.generatorBoxes{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.generatorBoxes {
+  display: grid;
+  grid-template-columns: repeat(3, 440px);
   gap: 30px;
-  max-width: 1800px;
+  justify-content: center;
 }
-
-
-/* .testbox {
-  background-color: red;
-  height: 500px;
-} */
-
-/* @media (max-width: 1000px) {
-  .testbox {
-    background-color: yellow;
-    font-size: 100px;
-  }
-} */
-
-/* @media (max-width: 700px) {
-  .testbox {
-    background-color: hotpink;
-    font-size: 400px;
-  }
-} */
