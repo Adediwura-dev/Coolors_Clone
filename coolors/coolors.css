@@ -174,14 +174,6 @@ header {
   animation-play-state: paused;
 }
 
-.hero2Text {
-  p {
-    font-size: 24px;
-    max-width: 750px;
-    line-height: 35px;
-  }
-}
-
 .hero2 {
   display: flex;
   justify-content: center;
@@ -190,11 +182,43 @@ header {
   gap: 120px;
   flex-wrap: nowrap;
 }
+/* @media (max-width: 1000px) {
+  .hero2{
+    display: flex;
+    text-wrap: balance;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+  }
+} */
+
+.hero2Text {
+  p {
+    font-size: 24px;
+    max-width: 750px;
+    line-height: 35px;
+  }
+}
+/* @media (max-width: 1000px) {
+  .hero2Text {
+    display: flex;
+    text-align: center;
+    justify-content: left;
+    p {
+      font-size: 20px;
+    }
+  }
+} */
 
 .hero2Box {
   padding: 40px;
   width: 500px;
 }
+/* @media (max-width:1000) {
+  .hero2Box {
+  width: 500px;
+}
+} */
 
 .color-day-title {
   width: 200px;
