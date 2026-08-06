@@ -141,8 +141,8 @@ header {
 }
 
 /* my work goes here */
-.logo-container {
-  overflow: hidden;
+.logos-container {
+  overflow: -moz-hidden-unscrollable;
   width: 100%;
 }
 
@@ -182,15 +182,6 @@ header {
   gap: 120px;
   flex-wrap: nowrap;
 }
-/* @media (max-width: 1000px) {
-  .hero2{
-    display: flex;
-    text-wrap: balance;
-    flex-wrap: wrap;
-    flex-direction: column;
-    gap: 10px;
-  }
-} */
 
 .hero2Text {
   p {
@@ -199,26 +190,12 @@ header {
     line-height: 35px;
   }
 }
-/* @media (max-width: 1000px) {
-  .hero2Text {
-    display: flex;
-    text-align: center;
-    justify-content: left;
-    p {
-      font-size: 20px;
-    }
-  }
-} */
 
 .hero2Box {
   padding: 40px;
   width: 500px;
+  cursor: pointer;
 }
-/* @media (max-width:1000) {
-  .hero2Box {
-  width: 500px;
-}
-} */
 
 .color-day-title {
   width: 200px;
@@ -233,6 +210,10 @@ header {
   background: rgb(245, 245, 245);
   border-radius: 20px;
   padding: 40px;
+  transition: box-shadow 0.25s ease;
+}
+.color-card:hover {
+  box-shadow: 0 0 30px 2px rgba(29, 78, 216, 0.4);
 }
 
 .homepage-color-of-the-day {
@@ -308,7 +289,9 @@ header {
 
 .card,
 .card * {
-  transition: color 0.3s ease, background-color 0.3s ease;
+  transition:
+    color 0.3s ease,
+    background-color 0.3s ease;
 }
 
 .card:hover * {
@@ -392,4 +375,157 @@ header {
   grid-template-columns: repeat(3, 440px);
   gap: 30px;
   justify-content: center;
+}
+
+/* Media Queries(Desktop) */
+@media (max-width: 1024px) {
+  .hero2 {
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 50px 40px;
+  }
+
+  .hero2Text {
+    text-align: center;
+    text-align: left;
+  }
+
+  .hero2Text p {
+    max-width: 100%;
+    font-size: 20px;
+    line-height: 1.7;
+  }
+
+  .hero2Box {
+    width: 100%;
+    max-width: 500px;
+    padding: 0;
+  }
+
+  .generatorBoxes {
+    grid-template-columns: repeat(2, minmax(320px, 1fr));
+    padding: 0 30px;
+  }
+
+  .card {
+    width: auto;
+  }
+
+  .card h3 {
+    font-size: 38px;
+  }
+}
+
+/* Media Queries(Mobile) */
+
+@media (max-width: 768px) {
+  header {
+    padding: 15px;
+  }
+
+  .logoImg img {
+    width: 150px;
+  }
+
+  .hero {
+    padding: 20px;
+    gap: 30px;
+  }
+
+  .heroText {
+    text-align: left;
+  }
+
+  .heroText h1 {
+    font-size: 50px;
+    line-height: 1;
+  }
+
+  .heroText p {
+    font-size: 22px;
+    line-height: 1.6;
+  }
+
+  .heroText br,
+  .hero2Text br {
+    display: none;
+  }
+
+  .heroButtons {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .heroButtons button {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .heroImage img {
+    width: 100%;
+  }
+
+  .creative-text {
+    text-align: center;
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+
+  .brand-logos img {
+    height: 22px;
+  }
+
+  .hero2 {
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 30px;
+  }
+
+  .hero2Text {
+    text-align: center;
+  }
+
+  .hero2Text p {
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.7;
+  }
+
+  .hero2Box {
+    width: 100%;
+    padding: 0;
+  }
+
+  .color-day-title {
+    width: 160px;
+    margin-left: 15px;
+  }
+
+  .color-card {
+    flex-direction: row;
+    text-align: left;
+    padding: 25px;
+  }
+
+  .color-info h2 {
+    font-size: 22px;
+  }
+
+  .generatorBoxes {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .card {
+    width: auto;
+  }
+
+  .card h3 {
+    font-size: 34px;
+  }
+
+  .card-description {
+    font-size: 18px;
+  }
 }
